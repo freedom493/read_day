@@ -1,0 +1,266 @@
+/* ==========================
+   SPA Reader Layout & Styles
+   ========================== */
+body.spa-body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #0f172a;
+  color: #1e293b;
+  line-height: 1.6;
+  margin: 0;
+  display: block;
+  min-height: 100vh;
+}
+
+.spa-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Sidebar Styling */
+.spa-sidebar {
+  background-color: #ffffff;
+  border-right: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  overflow-y: auto;
+}
+
+.sidebar-cover {
+  width: 100%;
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.sidebar-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.85));
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  padding: 4px 10px;
+  border-radius: 20px;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.back-link:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.sidebar-overlay h1 {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.sidebar-author {
+  color: #cbd5e1;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.sidebar-chapters-container {
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.sidebar-chapters-container h3 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #64748b;
+  margin-bottom: 1rem;
+}
+
+.chapters-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.chapter-item {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border: 1px solid transparent;
+}
+
+.chapter-item:hover {
+  background-color: #f8fafc;
+}
+
+.chapter-item.active {
+  background-color: #e0e7ff;
+  border-color: #c7d2fe;
+}
+
+.chapter-item.active .chap-num {
+  color: #4f46e5;
+}
+
+.chapter-item.active .chap-title {
+  color: #1e293b;
+  font-weight: 600;
+}
+
+.chap-num {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #64748b;
+}
+
+.chap-title {
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+/* Content View Styling */
+.spa-content {
+  background-color: #f8fafc;
+  padding: 3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+.content-header {
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-header h2 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #1e293b;
+  letter-spacing: -0.02em;
+}
+
+.progress-indicator {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #4f46e5;
+  background: #e0e7ff;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.story-article-spa {
+  max-width: 720px;
+  width: 100%;
+}
+
+.spa-footer {
+  margin-top: 4rem;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 1.5rem;
+  font-size: 0.85rem;
+  color: #64748b;
+  text-align: left;
+}
+
+/* Story Typography & Elements */
+.d-content p {
+  font-size: 1.125rem;
+  color: #334155;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.story-list {
+  margin: 1.5rem 0;
+  padding-left: 1.5rem;
+  color: #334155;
+}
+
+.story-list li {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  margin-bottom: 0.5rem;
+}
+
+.story-divider {
+  border: 0;
+  height: 1px;
+  background-color: #e2e8f0;
+  margin: 2.5rem 0;
+}
+
+.dialogue-quote {
+  font-style: italic;
+  font-weight: 500;
+  color: #1e293b;
+  border-left: 3px solid #4f46e5;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+}
+
+.story-quote {
+  background-color: #ffffff;
+  border-left: 3px solid #cbd5e1;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.story-quote p {
+  margin-bottom: 0.5rem !important;
+  font-style: italic;
+  color: #64748b;
+}
+
+.story-quote p:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .spa-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .spa-sidebar {
+    height: auto;
+    position: relative;
+  }
+
+  .spa-content {
+    padding: 2rem 1.5rem;
+  }
+}
