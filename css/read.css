@@ -16,9 +16,10 @@ body.spa-body {
   grid-template-columns: 320px 1fr;
   min-height: 100vh;
   width: 100%;
+  position: relative;
 }
 
-/* Sidebar Styling */
+/* Modern Text-Only Sidebar Styling */
 .spa-sidebar {
   background-color: #ffffff;
   border-right: 1px solid #e2e8f0;
@@ -28,59 +29,54 @@ body.spa-body {
   position: sticky;
   top: 0;
   overflow-y: auto;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 100;
 }
 
+/* Hidden cover image container since it's removed */
 .sidebar-cover {
-  width: 100%;
-  height: 220px;
-  background-size: cover;
-  background-position: center;
-  position: relative;
+  display: none !important;
 }
 
-.sidebar-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.85));
-  padding: 1.25rem;
+.sidebar-header-modern {
+  padding: 2rem 1.5rem 1.25rem 1.5rem;
+  border-bottom: 1px solid #f1f5f9;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 1rem;
 }
 
-.back-link {
+.back-link-modern {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  color: #ffffff;
+  color: #4f46e5;
   text-decoration: none;
-  font-size: 0.85rem;
-  font-weight: 500;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(4px);
-  padding: 4px 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: #e0e7ff;
+  padding: 6px 12px;
   border-radius: 20px;
   width: fit-content;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
-.back-link:hover {
-  background: rgba(255, 255, 255, 0.35);
+.back-link-modern:hover {
+  background: #c7d2fe;
 }
 
-.sidebar-overlay h1 {
-  color: #ffffff;
+.sidebar-header-modern h1 {
+  color: #0f172a;
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.3;
+  letter-spacing: -0.02em;
+  margin: 0;
 }
 
-.sidebar-author {
-  color: #cbd5e1;
-  font-size: 0.75rem;
+.sidebar-author-modern {
+  color: #64748b;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 
@@ -90,38 +86,44 @@ body.spa-body {
 }
 
 .sidebar-chapters-container h3 {
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #64748b;
+  letter-spacing: 0.08em;
+  color: #94a3b8;
   margin-bottom: 1rem;
+  font-weight: 700;
 }
 
 .chapters-list {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.6rem;
+  padding: 0;
+  margin: 0;
 }
 
 .chapter-item {
-  padding: 0.75rem 1rem;
-  border-radius: 8px;
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   display: flex;
   flex-direction: column;
-  gap: 2px;
-  border: 1px solid transparent;
+  gap: 3px;
+  border: 1px solid #f1f5f9;
+  background-color: #fafafa;
 }
 
 .chapter-item:hover {
-  background-color: #f8fafc;
+  background-color: #f1f5f9;
+  border-color: #e2e8f0;
 }
 
 .chapter-item.active {
-  background-color: #e0e7ff;
+  background: linear-gradient(135deg, #e0e7ff 0%, #ede9fe 100%);
   border-color: #c7d2fe;
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.06);
 }
 
 .chapter-item.active .chap-num {
@@ -129,25 +131,31 @@ body.spa-body {
 }
 
 .chapter-item.active .chap-title {
-  color: #1e293b;
-  font-weight: 600;
+  color: #312e81;
+  font-weight: 700;
 }
 
 .chap-num {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 700;
   color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .chap-title {
   font-size: 0.95rem;
-  color: #475569;
+  color: #334155;
+  font-weight: 500;
+  line-height: 1.4;
 }
 
-/* Content View Styling */
+/* ==========================
+   Sticky Content Header & View
+   ========================== */
 .spa-content {
   background-color: #f8fafc;
-  padding: 3rem 4rem;
+  padding: 2rem 4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -156,19 +164,71 @@ body.spa-body {
 }
 
 .content-header {
+  position: sticky;
+  top: 0;
+  background-color: #f8fafc;
+  z-index: 50;
   border-bottom: 1px solid #e2e8f0;
-  padding-bottom: 1.5rem;
-  margin-bottom: 2.5rem;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
+}
+
+.header-left-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 0; /* Prevents flex items from breaking boundaries */
 }
 
 .content-header h2 {
-  font-size: 1.75rem;
+  font-size: 1.35rem;
   font-weight: 800;
   color: #1e293b;
   letter-spacing: -0.02em;
+  white-space: nowrap;        /* Keeps title cleanly on one line */
+  overflow: hidden;           /* Clips overflow text */
+  text-overflow: ellipsis;    /* Adds ellipsis (...) if text is too long */
+  margin: 0;
+}
+
+/* Sidebar Toggle Hamburger Button (Hidden on Desktop) */
+.sidebar-toggle-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 22px;
+  height: 16px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.sidebar-toggle-btn span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #1e293b;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.sidebar-overlay-backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  z-index: 99;
 }
 
 .progress-indicator {
@@ -176,8 +236,10 @@ body.spa-body {
   font-weight: 600;
   color: #4f46e5;
   background: #e0e7ff;
-  padding: 4px 10px;
+  padding: 6px 12px;
   border-radius: 20px;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .story-article-spa {
@@ -195,7 +257,8 @@ body.spa-body {
 }
 
 /* Story Typography & Elements */
-.d-content p {
+.d-content p, 
+#story-text-container p {
   font-size: 1.125rem;
   color: #334155;
   line-height: 1.8;
@@ -249,18 +312,44 @@ body.spa-body {
   margin-bottom: 0 !important;
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments & Sidebar Drawer Logic */
 @media (max-width: 900px) {
   .spa-layout {
     grid-template-columns: 1fr;
   }
 
   .spa-sidebar {
-    height: auto;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100vh;
+    transform: translateX(-100%);
+    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.15);
+  }
+
+  .spa-sidebar.sidebar-open {
+    transform: translateX(0);
+  }
+
+  .sidebar-toggle-btn {
+    display: flex;
+  }
+
+  .sidebar-overlay-backdrop.active {
+    display: block;
   }
 
   .spa-content {
-    padding: 2rem 1.5rem;
+    padding: 1rem 1.25rem;
+  }
+
+  .content-header {
+    padding: 0.75rem 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .content-header h2 {
+    font-size: 1.05rem;
   }
 }

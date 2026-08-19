@@ -11,8 +11,11 @@
 <body class="spa-body">
 
   <div class="spa-layout">
+    <!-- Mobile Sidebar Backdrop Overlay -->
+    <div class="sidebar-overlay-backdrop" id="sidebar-backdrop"></div>
+
     <!-- Sidebar View -->
-    <aside class="spa-sidebar">
+    <aside class="spa-sidebar" id="spa-sidebar">
       <div class="sidebar-cover" id="sidebar-cover">
         <div class="sidebar-overlay">
           <a href="../index.html" class="back-link">
@@ -29,7 +32,7 @@
       </div>
 
       <div class="sidebar-chapters-container">
-        <h3>Chapters / Days</h3>
+        <h3>Days</h3>
         <ul id="chapters-list" class="chapters-list">
           <!-- Dynamically populated by read.js -->
         </ul>
@@ -39,7 +42,15 @@
     <!-- Content View -->
     <main class="spa-content">
       <header class="content-header">
-        <h2 id="content-day-header">DAY 1: Who is James?</h2>
+        <div class="header-left-group">
+          <!-- Hamburger Toggle Button for Sidebar -->
+          <button class="sidebar-toggle-btn" id="sidebar-toggle" aria-label="Toggle Chapters Sidebar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <h2 id="content-day-header">DAY 1: Who is James?</h2>
+        </div>
         <div class="progress-indicator" id="progress-indicator">Reading Progress: Saved</div>
       </header>
 

@@ -103,22 +103,39 @@ const storyData = {
 document.addEventListener('DOMContentLoaded', () => {
   const STORAGE_KEY = 'readday_praised_fool_progress';
   
-  // Set sidebar cover background image dynamically
+  // Set sidebar cover background image dynamically (if cover div exists)
   const coverDiv = document.getElementById('sidebar-cover');
   if (coverDiv) {
     coverDiv.style.backgroundImage = `url('${storyData.coverImage}')`;
   }
 
   // Retrieve saved progress or default to Day 1
-  let activeDayNum = parseInt(localStorage.getItem(STORAGE_KEY)) || 1;
+  let activeDayNum = parseInt(localStorage.getItem(STORAGE_KEY), 10) || 1;
   
   // Validate if day exists
   if (!storyData.days.some(d => d.day === activeDayNum)) {
     activeDayNum = 1;
   }
 
+  // Mobile Sidebar Drawer Elements
+  const sidebar = document.getElementById('spa-sidebar');
+  const sidebarToggle = document.getElementById('sidebar-toggle');
+  const sidebarBackdrop = document.getElementById('sidebar-backdrop');
+
+  function toggleSidebar() {
+    if (sidebar && sidebarBackdrop) {
+      sidebar.classList.toggle('sidebar-open');
+      sidebarBackdrop.classList.toggle('active');
+    }
+  }
+
+  if (sidebarToggle) sidebarToggle.addEventListener('click', toggleSidebar);
+  if (sidebarBackdrop) sidebarBackdrop.addEventListener('click', toggleSidebar);
+
   function renderSidebar() {
     const listContainer = document.getElementById('chapters-list');
+    if (!listContainer) return;
+    
     listContainer.innerHTML = '';
 
     storyData.days.forEach((item) => {
@@ -134,24 +151,43 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem(STORAGE_KEY, activeDayNum);
         renderSidebar();
         loadDayContent(activeDayNum);
+
+        // Automatically close sidebar drawer on mobile after picking a chapter
+        if (window.innerWidth <= 900) {
+          toggleSidebar();
+        }
       });
 
       listContainer.appendChild(li);
     });
   }
 
+  /**
+   * @param {number} dayNum
+   */
   function loadDayContent(dayNum) {
     const dayObj = storyData.days.find(d => d.day === dayNum);
     if (!dayObj) return;
 
     // Update Header
-    document.getElementById('content-day-header').textContent = `DAY ${dayObj.day}: ${dayObj.title}`;
+    const headerTitle = document.getElementById('content-day-header');
+    if (headerTitle) {
+      headerTitle.textContent = `DAY ${dayObj.day}: ${dayObj.title}`;
+    }
     
     // Update Content
-    document.getElementById('story-text-container').innerHTML = dayObj.content;
+    const textContainer = document.getElementById('story-text-container');
+    if (textContainer) {
+      textContainer.innerHTML = dayObj.content;
+    }
 
     // Scroll content view back to top smoothly
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    const contentArea = document.querySelector('.spa-content');
+    if (contentArea) {
+      contentArea.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   }
 
   // Initial load
