@@ -2,6 +2,7 @@ const storyData = {
   title: "The Praised Fool",
   author: "Freedom Adetoye",
   coverImage: "../assets/images/cover_image.png",
+
   days: [
     {
       day: 1,
@@ -74,18 +75,337 @@ const storyData = {
         <p>James kept walking. He said nothing. As usual.</p>
       `
     },
+
     {
       day: 2,
-      title: "The Weight of Expectations",
+      title: "The Debt",
       content: `
-        <p>Day 2 begins with the early morning lecture bell ringing across the campus quadrangle.</p>
-        <p>James sat near the back of the large 100-level Law lecture theatre, staring blankly at the slide presentation.</p>
-        <p>Prof. Adeleke's voice droned on about constitutional precedents, but none of it registered.</p>
-        <p>His phone buzzed quietly in his palm. A text message from his friend: <em>"Where are you? The delivery guy is here and you left the inventory sheets unchecked."</em></p>
-        <p>James let out a quiet sigh, typing out an apology before he even realized he was doing it.</p>
-        <p class="dialogue-quote">"I'm on my way," he texted back. Another day surrendered.</p>
+        <p>"James, you're back this early. Are your lectures over?" Mr. Right asked.</p>
+
+        <p>"Oh... yes. The lecture was cancelled. Do you have bread for ₦500?" James replied.</p>
+
+        <p>"Yes. Your favorite. Would you want anything else? Maybe tea?"</p>
+
+        <p>"Yes, sir. Add Milo 3-in-1, ₦100 milk and ₦100 sugar."</p>
+
+        <p>James paused.</p>
+
+        <p>"Everything becomes ₦1,050."</p>
+
+        <p>Mr. Right looked at him.</p>
+
+        <p>"Yes. Plus the old debt. Everything becomes ₦2,500. When are you going to pay me?"</p>
+
+        <p>James hesitated.</p>
+
+        <p>"Oh, Mr. Right... I called my parents and they said they'll send money this evening or before Sunday."</p>
+
+        <p>It was a lie.</p>
+
+        <p>James was owing his friend, Mr. Right.</p>
+
+        <p>And Mr. Right was the only person James owed.</p>
+
+        <hr class="story-divider">
+
+        <p>When James first arrived at school, he had applied for a space in the hostel and followed all the necessary procedures to acquire a bed.</p>
+
+        <p>Everything was unfamiliar.</p>
+
+        <p>He asked his roommate where he could buy food and was directed to a small shop.</p>
+
+        <p>That was where he met Mr. Right.</p>
+
+        <p>It wasn't a food shop exactly. Mr. Right sold snacks, bread, drinks, and other little things students needed.</p>
+
+        <p>James bought something from him that day.</p>
+
+        <p>"Come again," Mr. Right had told him.</p>
+
+        <p>And James did.</p>
+
+        <p>Again.</p>
+
+        <p>And again.</p>
+
+        <p>Eventually, the regular customer became a friend.</p>
+
+        <p>But James had a problem.</p>
+
+        <p>He spent money too easily.</p>
+
+        <p>Within two weeks, his allowance was gone.</p>
+
+        <p>Then his cooking gas finished.</p>
+
+        <p>He had no money to refill it.</p>
+
+        <p>And now he was hungry.</p>
+
+        <p>Very hungry.</p>
+
+        <p>But James had never been good at asking for help.</p>
+
+        <p>His fellowship brethren had already told him:</p>
+
+        <p class="dialogue-quote">"Come clean with whatever you need. We'll help you in whatever little way we can."</p>
+
+        <p>James never told them.</p>
+
+        <p>He couldn't.</p>
+
+        <p>Instead, with the last ₦200 in his account, he walked out to buy sugar and groundnuts so he could drink garri.</p>
+
+        <p>And somehow, his feet carried him to Mr. Right's shop.</p>
+
+        <hr class="story-divider">
+
+        <p>The hunger was obvious.</p>
+
+        <p>It showed on James' face.</p>
+
+        <p>It showed in his voice.</p>
+
+        <p>Mr. Right noticed.</p>
+
+        <p>"James, have you eaten today?"</p>
+
+        <p>"Yes."</p>
+
+        <p>It was another lie.</p>
+
+        <p>Mr. Right knew.</p>
+
+        <p>He gave James a biscuit.</p>
+
+        <p>James rejected it.</p>
+
+        <p>"I'm fine."</p>
+
+        <p>"Take it."</p>
+
+        <p>"No, I'm okay."</p>
+
+        <p>But Mr. Right didn't leave it there.</p>
+
+        <p>"Come. Take a seat. Let's discuss."</p>
+
+        <p>Something about those words broke through James.</p>
+
+        <p>Maybe it was the hunger.</p>
+
+        <p>Maybe it was the concern.</p>
+
+        <p>Or maybe James had simply been holding too much inside for too long.</p>
+
+        <p>He started talking.</p>
+
+        <p>And once James started talking, he couldn't seem to stop.</p>
+
+        <p>Everything came out.</p>
+
+        <p>Things he shouldn't have said.</p>
+
+        <p>Things he had promised himself he would never tell anyone.</p>
+
+        <p>Things he had buried for years.</p>
+
+        <p>James talked.</p>
+
+        <p>And talked.</p>
+
+        <p>Until Mr. Right finally had to tell him enough.</p>
+
+        <p>That night, as James lay in his hostel room, he kept thinking about it.</p>
+
+        <p>How?</p>
+
+        <p>How had he, a person who could barely tell anyone anything, suddenly said so much?</p>
+
+        <p>His mind replayed Mr. Right's words.</p>
+
+        <p class="dialogue-quote">"Come, take a seat. Let's discuss."</p>
+
+        <p class="dialogue-quote">"Have you eaten today?"</p>
+
+        <p>He remembered lying.</p>
+
+        <p>He remembered rejecting the biscuit.</p>
+
+        <p>He remembered how Mr. Right somehow knew he was lying.</p>
+
+        <p>And then he remembered everything he had said.</p>
+
+        <hr class="story-divider">
+
+        <p>His phone rang.</p>
+
+        <p>Luckily, it was his parents.</p>
+
+        <p>They had a little discussion.</p>
+
+        <p>His parents knew James well.</p>
+
+        <p>They always somehow managed to get the truth out of him.</p>
+
+        <p>But this time, James didn't mention Mr. Right.</p>
+
+        <p>He didn't mention the offer Mr. Right had made.</p>
+
+        <p>His parents simply told him they would send money the next day.</p>
+
+        <p>It was already night.</p>
+
+        <p>James went back to thinking.</p>
+
+        <p>The next morning, the money arrived.</p>
+
+        <p>And immediately, he remembered Mr. Right's offer.</p>
+
+        <p class="dialogue-quote">"You can help me sell here every day. Even if it's just five hours. I'll make sure you have something to eat."</p>
+
+        <p>It sounded reasonable.</p>
+
+        <p>But James remembered something else.</p>
+
+        <p>He remembered his father's boss.</p>
+
+        <p>Once, James had asked for help getting a job.</p>
+
+        <p>Instead, he ended up working for free.</p>
+
+        <p>He had convinced himself that he would eventually receive a monthly salary.</p>
+
+        <p>He never did.</p>
+
+        <p>And yet, whenever he did something well, they praised him.</p>
+
+        <p class="story-quote">"You're talented."</p>
+        <p class="story-quote">"You're very good."</p>
+        <p class="story-quote">"You're hardworking."</p>
+
+        <p>The praise continued.</p>
+
+        <p>So did the free work.</p>
+
+        <p>James' best friend had once told him:</p>
+
+        <p class="dialogue-quote">"Anything you do, make sure the person pays you for the service. Otherwise, they'll come tomorrow asking for another free service. And it'll continue forever while they brag about your talent."</p>
+
+        <p>James remembered those words.</p>
+
+        <p>So he decided to turn down Mr. Right's offer.</p>
+
+        <p>He wanted their relationship to remain mutual.</p>
+
+        <p>He would help when he could.</p>
+
+        <p>But he didn't want to work for him.</p>
+
+        <p>"But anyway..." James thought.</p>
+
+        <p>"It's just friendship. I'm only helping out."</p>
+
+        <hr class="story-divider">
+
+        <p>Today, however, he was owing Mr. Right.</p>
+
+        <p>His parents had only said they would send the money.</p>
+
+        <p>They hadn't said exactly when.</p>
+
+        <p>And now Mr. Right needed his money.</p>
+
+        <p>"You better call them. I need the money to go to the market tomorrow," Mr. Right said.</p>
+
+        <p>"Oh... okay. I will. Thank you, sir."</p>
+
+        <p>James was about to leave when Mr. Right remembered something.</p>
+
+        <p>"About that website... when are you going to show me how to use it?"</p>
+
+        <p>"Alright. Let me show you now."</p>
+
+        <p>James brought out his phone.</p>
+
+        <p>But before he could begin, a customer walked in.</p>
+
+        <p>Then another.</p>
+
+        <p>And another.</p>
+
+        <p>James tried to leave and come back later.</p>
+
+        <p>"Just wait a little," Mr. Right said.</p>
+
+        <p>So James waited.</p>
+
+        <p>Five minutes became fifteen.</p>
+
+        <p>Fifteen became thirty.</p>
+
+        <p>Thirty became an hour.</p>
+
+        <p>Finally, James couldn't take it anymore.</p>
+
+        <p>He bolted.</p>
+
+        <p>He didn't look back.</p>
+
+        <p>He needed to quench his hunger.</p>
+
+        <p>"Why not stay here and eat?" Mr. Right called after him while attending to another customer.</p>
+
+        <p>James waved.</p>
+
+        <p>"I'll come back later."</p>
+
+        <p>And he left.</p>
+
+        <hr class="story-divider">
+
+        <p>James stayed on the last floor of the hostel.</p>
+
+        <p>As he climbed the stairs, he mumbled to himself.</p>
+
+        <p class="dialogue-quote">"I told you creating that website would be a stress for you."</p>
+
+        <p>He kept climbing.</p>
+
+        <p>His mind returned to the money.</p>
+
+        <p>How would he convince his parents to send him enough to clear his debt?</p>
+
+        <p>His silence had taught him many things.</p>
+
+        <p>One of them was how to hide the truth.</p>
+
+        <p>Another was how to lie when he needed to.</p>
+
+        <p>Then an idea came to him.</p>
+
+        <p>James smiled.</p>
+
+        <p class="dialogue-quote">"Yes... that will work."</p>
+
+        <p>He would get the money.</p>
+
+        <p>He would clear his debt.</p>
+
+        <p>And maybe...</p>
+
+        <p>He could get some extra.</p>
+
+        <p>Extra money to gamble with.</p>
+
+        <p>James continued climbing the stairs.</p>
+
+        <p>And for the first time, the problem wasn't just that James was hungry.</p>
+
+        <p><strong>He was becoming comfortable with the lie.</strong></p>
       `
     },
+
     {
       day: 3,
       title: "Code and Conscience",
@@ -96,7 +416,24 @@ const storyData = {
         <p>For a brief moment, he wasn't the submissive law student trapped in silence.</p>
         <p>He was a creator. But morning was coming fast, and with it, the familiar weight of obligations.</p>
       `
-    }
+    },
+
+    // Days 4–30
+    ...Array.from({ length: 27 }, (_, index) => {
+      const dayNumber = index + 4;
+
+      return {
+        day: dayNumber,
+        title: "Coming Soon",
+        content: `
+          <div class="coming-soon">
+            <h2>DAY ${dayNumber}</h2>
+            <p>This Day has not been released yet.</p>
+            <p><strong>Coming Soon...</strong></p>
+          </div>
+        `
+      };
+    })
   ]
 };
 
