@@ -407,16 +407,156 @@ const storyData = {
     },
 
     {
-      day: 3,
-      title: "Code and Conscience",
-      content: `
-        <p>Day 3 brings a brief escape.</p>
-        <p>In the quiet hours of midnight, long after the campus lights dimmed, James opened his laptop.</p>
-        <p>Away from the shop demands and university lectures, his fingers moved smoothly across the keyboard, fixing a stubborn bug in a Python script he was building for fun.</p>
-        <p>For a brief moment, he wasn't the submissive law student trapped in silence.</p>
-        <p>He was a creator. But morning was coming fast, and with it, the familiar weight of obligations.</p>
-      `
-    },
+  day: 3,
+  title: "Is Gambling a Solution?",
+  content: `
+    <p>"Oh... see this, people. If I had known earlier, I would have used this money to buy something to eat rather than just waste it like this," James lamented as the money he used to bet was all gone.</p>
+
+    <p>Lucky for him, he had already given Mr. Right his money, and the only thing left with him was ₦1,000.</p>
+
+    <p>James started betting just to get extra cash. At the time, it seemed like the only fast way to make money because he had no monetizable skill.</p>
+
+    <p>James only went around looking for odd jobs. His reason was simple: he wanted to earn enough money to take care of himself and also help his parents.</p>
+
+    <p>But whatever he earned was never enough. He could barely make up to ₦5,000 in a week because his parents were strict and wouldn't allow him to leave the house freely.</p>
+
+    <hr class="story-divider">
+
+    <p>In the place where James stayed, his father's boss's husband supplied canopies and chairs.</p>
+
+    <p>James found an opportunity to follow them whenever they went to mount or supply the canopies and chairs. At the end of the work, they would give him a little money for his service.</p>
+
+    <p>James had been doing this for quite a long time.</p>
+
+    <p>Then one day, while using his father's Android phone, he discovered betting. He was able to create an account and was given a free bet.</p>
+
+    <p>He used the free bet and won his first ₦1,000.</p>
+
+    <p>It seemed easy.</p>
+
+    <p>It seemed fun.</p>
+
+    <p>Later, he withdrew the money into his father's account.</p>
+
+    <p>He eventually created an OPay account, which at the time was easy to create and use. He deposited his first money into the account and then funded his betting account with ₦100.</p>
+
+    <p>Again, he won.</p>
+
+    <p>This time, he won another ₦3,000.</p>
+
+    <p>James was excited.</p>
+
+    <p>He broke the news to the friend who had introduced him to betting. Later, he withdrew the money into the OPay account he had created and spent it.</p>
+
+    <p>Both the betting and OPay accounts had been created using his father's credentials because James was still underage.</p>
+
+    <hr class="story-divider">
+
+    <p>Today, James' parents sent him ₦10,000 because Easter was approaching and he wouldn't be coming home for the holiday.</p>
+
+    <p>After buying a little gas, getting some snacks, and paying back Mr. Right, he still had ₦3,000 left with him.</p>
+
+    <p>James sat down and thought about everything he needed to do.</p>
+
+    <p class="dialogue-quote">"We have an assignment that we need to type and spiral-bind. I need to buy food stock, and I still need extra cash for emergencies," James thought.</p>
+
+    <p>He continued to contemplate.</p>
+
+    <p class="dialogue-quote">"Maybe I should try my luck in betting and see if I could get anything out of it."</p>
+
+    <p>After settling it in his mind, James placed a bet with ₦2,000.</p>
+
+    <p>It was all gone.</p>
+
+    <p>Now he was left with only ₦1,000.</p>
+
+    <hr class="story-divider">
+
+    <p>Another battle started in his mind.</p>
+
+    <p>Should he continue with the money he had left?</p>
+
+    <p>Or should he stop?</p>
+
+    <p>He also thought about his data and airtime subscription.</p>
+
+    <p>Finally, he decided to use ₦500 of the money to gamble again.</p>
+
+    <p>This time, he was lucky.</p>
+
+    <p>He won ₦5,000.</p>
+
+    <p>Now the total money with him was ₦5,500.</p>
+
+    <p>James rushed out like the wind.</p>
+
+    <p>He went straight to buy noodles and egg, which were prepared instantly for him.</p>
+
+    <p>For a moment, James was happy.</p>
+
+    <p>But he had already forgotten to save at least ₦2,000 for emergencies.</p>
+
+    <p>Instead, he continued spending.</p>
+
+    <p>He spent money on things that didn't really matter.</p>
+
+    <p>Before long, he was left with only ₦3,000 again.</p>
+
+    <p>Then James started blaming himself for not being able to control his appetite.</p>
+
+    <p>And once again, another thought entered his mind.</p>
+
+    <p class="dialogue-quote">"Maybe I should bet again."</p>
+
+    <p>He did.</p>
+
+    <p>And this time, all his money was gone.</p>
+
+    <p>He was left with nothing but ₦200, which he kept aside for his data subscription.</p>
+
+    <hr class="story-divider">
+
+    <p>Today, James had already eaten enough. He wasn't hungry anymore.</p>
+
+    <p>But he was worried.</p>
+
+    <p>He paced around the room, thinking about what would happen if an emergency came up.</p>
+
+    <p>How would he get money?</p>
+
+    <p>What would he do if he suddenly needed something important?</p>
+
+    <p>After thinking about it for a while, James came to a conclusion.</p>
+
+    <p>He would simply meet his friend, Mr. Right, and borrow money from him.</p>
+
+    <p>Then a notification entered his phone.</p>
+
+    <p>It was from his class group.</p>
+
+    <p>A material was required for their assignment and everyone was expected to buy it.</p>
+
+    <p>James looked at the notification.</p>
+
+    <p class="dialogue-quote">"The material can wait... or I can snap it with my phone."</p>
+
+    <hr class="story-divider">
+
+    <p>James put his phone down.</p>
+
+    <p>For now, he had found a way to postpone the problem.</p>
+
+    <p>But deep down, he knew something was wrong.</p>
+
+    <p>He had started betting because he needed money.</p>
+
+    <p>Now, he was losing money because of betting.</p>
+
+    <p>And somehow, he was beginning to believe that the solution to the problem he created was to gamble again.</p>
+
+    <p><strong>Was gambling really a solution, or was James only making his problem bigger?</strong></p>
+  `
+},
 
     // Days 4–30
     ...Array.from({ length: 27 }, (_, index) => {

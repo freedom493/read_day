@@ -11,7 +11,7 @@ const stories = [
     link: "./read/the_praised_fool.html",
     seriesLength: 30,
     releasing: true,
-    released: 2
+    released: 3
   },
   {
     id: 1,
